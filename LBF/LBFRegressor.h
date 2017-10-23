@@ -82,8 +82,8 @@ public:
     void WriteGlobalParam(std::ofstream& fout);
     void ReadGlobalParam(std::ifstream& fin);
     void WriteRegressor(std::ofstream& fout);
-    void ReadRegressor(std::ifstream& fin);
-    
+	void ReadRegressor(std::ifstream& fin,std::string path);
+	
 };
 
 #endif

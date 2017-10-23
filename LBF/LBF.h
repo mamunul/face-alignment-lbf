@@ -109,4 +109,5 @@ double TestModel(std::vector<std::string> testDataName, std::string folderPath);
 int FaceDetectionAndAlignment(const char* inputname);
 void ReadGlobalParamFromFile(std::string path);
 double CalculateError(const cv::Mat_<double>& ground_truth_shape, const cv::Mat_<double>& predicted_shape);
+
 #endif

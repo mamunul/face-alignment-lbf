@@ -19,6 +19,8 @@ string modelPath ="/model_69/";
 string dataPath = "/Dataset/";
 string cascadeName = "haarcascade_frontalface_alt.xml";
 
+
+
 void InitializeGlobalParam();
 void PrintHelp();
 /*
@@ -102,6 +104,7 @@ void InitializeGlobalParam(){
     }
     global_params.max_numthreshs = 500;
 }
+
 
 void ReadGlobalParamFromFile(string path){
     cout << "Loading GlobalParam..." << endl;

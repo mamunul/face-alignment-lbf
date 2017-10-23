@@ -17,7 +17,7 @@
 	std::vector<std::string> testDataName;
 	
 	NSString *p = [[NSBundle mainBundle] resourcePath];
-	testDataName.push_back("02_Outdoor");
+	testDataName.push_back("helen/testset");
 	
 //	NSString *path = [[NSBundle mainBundle] pathForResource:@"Dataset/ibug/Path_Images" ofType:@"txt"];
 	

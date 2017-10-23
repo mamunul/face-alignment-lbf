@@ -16,9 +16,9 @@ double TestModel (vector<string> testDataName, string _folderPath){
     int initial_number = 1;
     for(int i=0;i<testDataName.size();i++){
         string path;
-        if(testDataName[i]=="helen"||testDataName[i]=="lfpw")
-            path = dataPath + testDataName[i] + "/testset/Path_Images.txt";
-        else
+//        if(testDataName[i]=="helen"||testDataName[i]=="lfpw")
+//            path = dataPath + testDataName[i] + "/testset/Path_Images.txt";
+//        else
             path = _folderPath + dataPath + testDataName[i] + "/Path_Images.txt";
 		//printf("path:%s\n",path.c_str());
         //LoadData(path, test_images, test_ground_truth_shapes, test_bounding_boxs);
@@ -53,11 +53,12 @@ double TestModel (vector<string> testDataName, string _folderPath){
 //         draw result :: red
         for(int j = 0;j < global_params.landmark_num;j++){
             circle(test_images[i],Point2d(current_shapes[i](j,0),current_shapes[i](j,1)),1,Scalar(255,255,255),-1,8,0);
+			circle(test_images[i],Point2d(test_ground_truth_shapes[i](j,0),current_shapes[i](j,1)),1,Scalar(0,255,255),-1,8,0);
         }
 //        imshow("result", test_images[i]);
 //        char a = waitKey(0);
 //        if(a=='s'){
-//           bool y = imwrite("/Users/mamunul/testserver/"+to_string(i)+".jpg",test_images[i]);
+           bool y = imwrite("/Users/mamunul/testserver/"+to_string(i)+".jpg",test_images[i]);
 //        }
 		
 //		printf("y:%d\n",y);

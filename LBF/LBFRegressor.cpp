@@ -455,7 +455,7 @@ void LBFRegressor::Load(string path){
     ifstream fin;
     fin.open(path);
     ReadGlobalParam(fin);
-    ReadRegressor(fin);
+    ReadRegressor(fin,folderPath + modelPath + "/Regressor.model");
     fin.close();
     cout << "End"<<endl;
 }
@@ -513,13 +513,13 @@ void  LBFRegressor::ReadGlobalParam(ifstream& fin){
     }
 }
 
-void LBFRegressor::ReadRegressor(ifstream& fin){
+void LBFRegressor::ReadRegressor(ifstream& fin,std::string path){
     mean_shape_ = Mat::zeros(global_params.landmark_num,2,CV_64FC1);
     for(int i = 0;i < global_params.landmark_num;i++){
         fin >> mean_shape_(i,0) >> mean_shape_(i,1);
     }
     ifstream fin_reg;
-    fin_reg.open(folderPath + modelPath + "/Regressor.model",ios::binary);
+    fin_reg.open(path,ios::binary);
     for (int i=0; i < global_params.max_numstage; i++ ){
         RandomForest_[i].Read(fin);
         int num =0;
