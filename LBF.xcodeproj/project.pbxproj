@@ -32,6 +32,8 @@
 		0C48B1CC1F9DAD8A005636DB /* Dataset in Resources */ = {isa = PBXBuildFile; fileRef = 0C48B1CA1F9DAD8A005636DB /* Dataset */; };
 		0C48B1CD1F9DAD8A005636DB /* model_69 in Resources */ = {isa = PBXBuildFile; fileRef = 0C48B1CB1F9DAD8A005636DB /* model_69 */; };
 		0C48B1CF1F9DAE4C005636DB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C48B1CE1F9DAE4C005636DB /* opencv2.framework */; };
+		0C48B1D21F9DAF02005636DB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C48B1D11F9DAF02005636DB /* CoreMedia.framework */; };
+		0C48B1D41F9DAF07005636DB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C48B1D31F9DAF07005636DB /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		0C48B1CA1F9DAD8A005636DB /* Dataset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dataset; sourceTree = "<group>"; };
 		0C48B1CB1F9DAD8A005636DB /* model_69 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model_69; sourceTree = "<group>"; };
 		0C48B1CE1F9DAE4C005636DB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		0C48B1D11F9DAF02005636DB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0C48B1D31F9DAF07005636DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C48B1D41F9DAF07005636DB /* AVFoundation.framework in Frameworks */,
+				0C48B1D21F9DAF02005636DB /* CoreMedia.framework in Frameworks */,
 				0C48B1CF1F9DAE4C005636DB /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +134,7 @@
 				0C48B1831F9DAC7B005636DB /* LBFTests */,
 				0C48B18E1F9DAC7B005636DB /* LBFUITests */,
 				0C48B16B1F9DAC7B005636DB /* Products */,
+				0C48B1D01F9DAF02005636DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,6 +237,15 @@
 				0C48B1BF1F9DAD13005636DB /* dscal.c */,
 			);
 			path = blas;
+			sourceTree = "<group>";
+		};
+		0C48B1D01F9DAF02005636DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C48B1D31F9DAF07005636DB /* AVFoundation.framework */,
+				0C48B1D11F9DAF02005636DB /* CoreMedia.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
