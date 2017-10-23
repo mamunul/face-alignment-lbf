@@ -9,11 +9,29 @@
 /* Begin PBXBuildFile section */
 		0C48B16F1F9DAC7B005636DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B16E1F9DAC7B005636DB /* AppDelegate.m */; };
 		0C48B1721F9DAC7B005636DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1711F9DAC7B005636DB /* main.m */; };
-		0C48B1751F9DAC7B005636DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1741F9DAC7B005636DB /* ViewController.m */; };
 		0C48B1771F9DAC7B005636DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C48B1761F9DAC7B005636DB /* Assets.xcassets */; };
 		0C48B17A1F9DAC7B005636DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C48B1781F9DAC7B005636DB /* Main.storyboard */; };
 		0C48B1851F9DAC7B005636DB /* LBFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1841F9DAC7B005636DB /* LBFTests.m */; };
 		0C48B1901F9DAC7B005636DB /* LBFUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B18F1F9DAC7B005636DB /* LBFUITests.m */; };
+		0C48B1AB1F9DACD3005636DB /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0C48B19D1F9DACD3005636DB /* haarcascade_frontalface_alt.xml */; };
+		0C48B1AC1F9DACD3005636DB /* LBFRegressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B19E1F9DACD3005636DB /* LBFRegressor.cpp */; };
+		0C48B1AD1F9DACD3005636DB /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B19F1F9DACD3005636DB /* Utils.cpp */; };
+		0C48B1AE1F9DACD3005636DB /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1A01F9DACD3005636DB /* Tree.cpp */; };
+		0C48B1AF1F9DACD3005636DB /* Facedetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1A11F9DACD3005636DB /* Facedetect.cpp */; };
+		0C48B1B01F9DACD3005636DB /* LBF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1A21F9DACD3005636DB /* LBF.cpp */; };
+		0C48B1B11F9DACD3005636DB /* TestModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1A61F9DACD3005636DB /* TestModel.cpp */; };
+		0C48B1B21F9DACD3005636DB /* RandomForest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1A71F9DACD3005636DB /* RandomForest.cpp */; };
+		0C48B1B31F9DACD3005636DB /* TrainModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1A91F9DACD3005636DB /* TrainModel.cpp */; };
+		0C48B1B41F9DACD3005636DB /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1AA1F9DACD3005636DB /* ViewController.mm */; };
+		0C48B1C41F9DAD13005636DB /* daxpy.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1BC1F9DAD13005636DB /* daxpy.c */; };
+		0C48B1C51F9DAD13005636DB /* ddot.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1BD1F9DAD13005636DB /* ddot.c */; };
+		0C48B1C61F9DAD13005636DB /* dnrm2.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1BE1F9DAD13005636DB /* dnrm2.c */; };
+		0C48B1C71F9DAD13005636DB /* dscal.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1BF1F9DAD13005636DB /* dscal.c */; };
+		0C48B1C81F9DAD13005636DB /* linear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1C01F9DAD13005636DB /* linear.cpp */; };
+		0C48B1C91F9DAD13005636DB /* tron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C48B1C21F9DAD13005636DB /* tron.cpp */; };
+		0C48B1CC1F9DAD8A005636DB /* Dataset in Resources */ = {isa = PBXBuildFile; fileRef = 0C48B1CA1F9DAD8A005636DB /* Dataset */; };
+		0C48B1CD1F9DAD8A005636DB /* model_69 in Resources */ = {isa = PBXBuildFile; fileRef = 0C48B1CB1F9DAD8A005636DB /* model_69 */; };
+		0C48B1CF1F9DAE4C005636DB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C48B1CE1F9DAE4C005636DB /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +57,6 @@
 		0C48B16E1F9DAC7B005636DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0C48B1711F9DAC7B005636DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C48B1731F9DAC7B005636DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0C48B1741F9DAC7B005636DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0C48B1761F9DAC7B005636DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C48B1791F9DAC7B005636DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C48B17B1F9DAC7B005636DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +66,33 @@
 		0C48B18B1F9DAC7B005636DB /* LBFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C48B18F1F9DAC7B005636DB /* LBFUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBFUITests.m; sourceTree = "<group>"; };
 		0C48B1911F9DAC7B005636DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C48B19D1F9DACD3005636DB /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		0C48B19E1F9DACD3005636DB /* LBFRegressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LBFRegressor.cpp; sourceTree = "<group>"; };
+		0C48B19F1F9DACD3005636DB /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		0C48B1A01F9DACD3005636DB /* Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tree.cpp; sourceTree = "<group>"; };
+		0C48B1A11F9DACD3005636DB /* Facedetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Facedetect.cpp; sourceTree = "<group>"; };
+		0C48B1A21F9DACD3005636DB /* LBF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LBF.cpp; sourceTree = "<group>"; };
+		0C48B1A31F9DACD3005636DB /* LBF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBF.h; sourceTree = "<group>"; };
+		0C48B1A41F9DACD3005636DB /* LBFRegressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBFRegressor.h; sourceTree = "<group>"; };
+		0C48B1A51F9DACD3005636DB /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		0C48B1A61F9DACD3005636DB /* TestModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestModel.cpp; sourceTree = "<group>"; };
+		0C48B1A71F9DACD3005636DB /* RandomForest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandomForest.cpp; sourceTree = "<group>"; };
+		0C48B1A81F9DACD3005636DB /* RandomForest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomForest.h; sourceTree = "<group>"; };
+		0C48B1A91F9DACD3005636DB /* TrainModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrainModel.cpp; sourceTree = "<group>"; };
+		0C48B1AA1F9DACD3005636DB /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		0C48B1BA1F9DAD13005636DB /* blas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blas.h; sourceTree = "<group>"; };
+		0C48B1BB1F9DAD13005636DB /* blasp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blasp.h; sourceTree = "<group>"; };
+		0C48B1BC1F9DAD13005636DB /* daxpy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = daxpy.c; sourceTree = "<group>"; };
+		0C48B1BD1F9DAD13005636DB /* ddot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ddot.c; sourceTree = "<group>"; };
+		0C48B1BE1F9DAD13005636DB /* dnrm2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dnrm2.c; sourceTree = "<group>"; };
+		0C48B1BF1F9DAD13005636DB /* dscal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dscal.c; sourceTree = "<group>"; };
+		0C48B1C01F9DAD13005636DB /* linear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = linear.cpp; sourceTree = "<group>"; };
+		0C48B1C11F9DAD13005636DB /* linear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linear.h; sourceTree = "<group>"; };
+		0C48B1C21F9DAD13005636DB /* tron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tron.cpp; sourceTree = "<group>"; };
+		0C48B1C31F9DAD13005636DB /* tron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tron.h; sourceTree = "<group>"; };
+		0C48B1CA1F9DAD8A005636DB /* Dataset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dataset; sourceTree = "<group>"; };
+		0C48B1CB1F9DAD8A005636DB /* model_69 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model_69; sourceTree = "<group>"; };
+		0C48B1CE1F9DAE4C005636DB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C48B1CF1F9DAE4C005636DB /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +144,16 @@
 		0C48B16C1F9DAC7B005636DB /* LBF */ = {
 			isa = PBXGroup;
 			children = (
+				0C48B1CE1F9DAE4C005636DB /* opencv2.framework */,
+				0C48B1CA1F9DAD8A005636DB /* Dataset */,
+				0C48B1CB1F9DAD8A005636DB /* model_69 */,
+				0C48B1B81F9DAD13005636DB /* liblinear */,
+				0C48B19D1F9DACD3005636DB /* haarcascade_frontalface_alt.xml */,
+				0C48B1B51F9DACE0005636DB /* lbf */,
 				0C48B16D1F9DAC7B005636DB /* AppDelegate.h */,
 				0C48B16E1F9DAC7B005636DB /* AppDelegate.m */,
 				0C48B1731F9DAC7B005636DB /* ViewController.h */,
-				0C48B1741F9DAC7B005636DB /* ViewController.m */,
+				0C48B1AA1F9DACD3005636DB /* ViewController.mm */,
 				0C48B1761F9DAC7B005636DB /* Assets.xcassets */,
 				0C48B1781F9DAC7B005636DB /* Main.storyboard */,
 				0C48B17B1F9DAC7B005636DB /* Info.plist */,
@@ -135,6 +186,50 @@
 				0C48B1911F9DAC7B005636DB /* Info.plist */,
 			);
 			path = LBFUITests;
+			sourceTree = "<group>";
+		};
+		0C48B1B51F9DACE0005636DB /* lbf */ = {
+			isa = PBXGroup;
+			children = (
+				0C48B19E1F9DACD3005636DB /* LBFRegressor.cpp */,
+				0C48B19F1F9DACD3005636DB /* Utils.cpp */,
+				0C48B1A01F9DACD3005636DB /* Tree.cpp */,
+				0C48B1A11F9DACD3005636DB /* Facedetect.cpp */,
+				0C48B1A21F9DACD3005636DB /* LBF.cpp */,
+				0C48B1A31F9DACD3005636DB /* LBF.h */,
+				0C48B1A41F9DACD3005636DB /* LBFRegressor.h */,
+				0C48B1A51F9DACD3005636DB /* Tree.h */,
+				0C48B1A61F9DACD3005636DB /* TestModel.cpp */,
+				0C48B1A71F9DACD3005636DB /* RandomForest.cpp */,
+				0C48B1A81F9DACD3005636DB /* RandomForest.h */,
+				0C48B1A91F9DACD3005636DB /* TrainModel.cpp */,
+			);
+			name = lbf;
+			sourceTree = "<group>";
+		};
+		0C48B1B81F9DAD13005636DB /* liblinear */ = {
+			isa = PBXGroup;
+			children = (
+				0C48B1B91F9DAD13005636DB /* blas */,
+				0C48B1C01F9DAD13005636DB /* linear.cpp */,
+				0C48B1C11F9DAD13005636DB /* linear.h */,
+				0C48B1C21F9DAD13005636DB /* tron.cpp */,
+				0C48B1C31F9DAD13005636DB /* tron.h */,
+			);
+			path = liblinear;
+			sourceTree = "<group>";
+		};
+		0C48B1B91F9DAD13005636DB /* blas */ = {
+			isa = PBXGroup;
+			children = (
+				0C48B1BA1F9DAD13005636DB /* blas.h */,
+				0C48B1BB1F9DAD13005636DB /* blasp.h */,
+				0C48B1BC1F9DAD13005636DB /* daxpy.c */,
+				0C48B1BD1F9DAD13005636DB /* ddot.c */,
+				0C48B1BE1F9DAD13005636DB /* dnrm2.c */,
+				0C48B1BF1F9DAD13005636DB /* dscal.c */,
+			);
+			path = blas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +339,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C48B1771F9DAC7B005636DB /* Assets.xcassets in Resources */,
+				0C48B1CD1F9DAD8A005636DB /* model_69 in Resources */,
+				0C48B1CC1F9DAD8A005636DB /* Dataset in Resources */,
+				0C48B1AB1F9DACD3005636DB /* haarcascade_frontalface_alt.xml in Resources */,
 				0C48B17A1F9DAC7B005636DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +367,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C48B1751F9DAC7B005636DB /* ViewController.m in Sources */,
+				0C48B1C51F9DAD13005636DB /* ddot.c in Sources */,
+				0C48B1AC1F9DACD3005636DB /* LBFRegressor.cpp in Sources */,
+				0C48B1B31F9DACD3005636DB /* TrainModel.cpp in Sources */,
 				0C48B1721F9DAC7B005636DB /* main.m in Sources */,
+				0C48B1AE1F9DACD3005636DB /* Tree.cpp in Sources */,
+				0C48B1C91F9DAD13005636DB /* tron.cpp in Sources */,
+				0C48B1B01F9DACD3005636DB /* LBF.cpp in Sources */,
+				0C48B1C81F9DAD13005636DB /* linear.cpp in Sources */,
+				0C48B1B21F9DACD3005636DB /* RandomForest.cpp in Sources */,
+				0C48B1C61F9DAD13005636DB /* dnrm2.c in Sources */,
+				0C48B1C41F9DAD13005636DB /* daxpy.c in Sources */,
+				0C48B1AF1F9DACD3005636DB /* Facedetect.cpp in Sources */,
+				0C48B1B41F9DACD3005636DB /* ViewController.mm in Sources */,
+				0C48B1AD1F9DACD3005636DB /* Utils.cpp in Sources */,
+				0C48B1C71F9DAD13005636DB /* dscal.c in Sources */,
 				0C48B16F1F9DAC7B005636DB /* AppDelegate.m in Sources */,
+				0C48B1B11F9DACD3005636DB /* TestModel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +522,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LBF",
+				);
 				INFOPLIST_FILE = LBF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mamunul.test.LBF;
@@ -422,6 +538,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LBF",
+				);
 				INFOPLIST_FILE = LBF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mamunul.test.LBF;
