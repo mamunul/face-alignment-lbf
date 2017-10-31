@@ -9,34 +9,36 @@
 #import "ViewController.h"
 
 
+using namespace std;
+
 @implementation ViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	std::vector<std::string> testDataName;
-	
-	NSString *p = [[NSBundle mainBundle] resourcePath];
-	testDataName.push_back("helen/testset");
-	
-//	NSString *path = [[NSBundle mainBundle] pathForResource:@"Dataset/ibug/Path_Images" ofType:@"txt"];
-	
-
-	std::string folderPath = [p UTF8String];
-	
-//	NSData *a = [[NSData alloc] initWithContentsOfFile:path];
-	
-//	NSLog(@"%@,%@",path,p);
-	//   testDataName.push_back("helen");
-	
-	std::string modelPath = [[[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/model_69/LBF.model"] UTF8String];
-	
-	ReadGlobalParamFromFile(modelPath);
-	double MRSE = TestModel(testDataName,folderPath);
-
 	// Do any additional setup after loading the view.
+	
+	[self startTraining];
 }
 
+
+-(void)startTraining{
+	std::vector<std::string> trainDataName;
+	extern string modelPath;
+	extern string dataPath;
+	extern string folderPath;
+
+	dataPath = "";
+	modelPath = "/Users/mamunul/Downloads/Shape_Prediction_Database/lbf/";
+	folderPath = "/Users/mamunul/Downloads/Shape_Prediction_Database/";
+
+
+	trainDataName.push_back("helen/trainset");
+	trainDataName.push_back("lfpw/trainset");
+	trainDataName.push_back("afw");
+	InitializeGlobalParam();
+	TrainModel(trainDataName,folderPath);
+}
 
 - (void)setRepresentedObject:(id)representedObject {
 	[super setRepresentedObject:representedObject];

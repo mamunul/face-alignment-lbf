@@ -242,6 +242,8 @@ void LoadOpencvBbxData(string folderPath,string filepath,
                        vector<Mat_<double> >& ground_truth_shapes,
                        vector<BoundingBox> & bounding_boxs
               ){
+	
+//	printf("path:%s,%s\n",folderPath.c_str(),filepath.c_str());
     ifstream fin;
     fin.open(filepath);
 

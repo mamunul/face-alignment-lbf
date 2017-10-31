@@ -63,6 +63,7 @@ double TestModel (vector<string> testDataName, string _folderPath){
 		
 //		printf("y:%d\n",y);
 		
+		
     }
     cout << "Mean Root Square Error is "<< MRSE_sum/current_shapes.size()*100 <<"%"<<endl;
     return MRSE_sum/current_shapes.size();

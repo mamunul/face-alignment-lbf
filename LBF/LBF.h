@@ -104,10 +104,10 @@ void adjustImage(cv::Mat_<uchar>& img,
                  cv::Mat_<double>& ground_truth_shape,
                  BoundingBox& bounding_box);
 
-void  TrainModel(std::vector<std::string> trainDataName);
+void  TrainModel(std::vector<std::string> trainDataName , std::string folderPath);
 double TestModel(std::vector<std::string> testDataName, std::string folderPath);
 int FaceDetectionAndAlignment(const char* inputname);
 void ReadGlobalParamFromFile(std::string path);
 double CalculateError(const cv::Mat_<double>& ground_truth_shape, const cv::Mat_<double>& predicted_shape);
-
+void InitializeGlobalParam();
 #endif
